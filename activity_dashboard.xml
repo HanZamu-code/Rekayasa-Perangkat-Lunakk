@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounddashboard"
+    tools:context=".DashboardActivity">
+
+
+    <ImageView
+        android:id="@+id/icon_search"
+        android:layout_width="40dp"
+        android:layout_marginStart="300dp"
+        android:layout_height="40dp"
+        android:padding="4dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/search"
+        android:background="@drawable/costumebg2" />
+
+    <RelativeLayout
+        android:id="@+id/search"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/costumebg2"
+        android:elevation="12dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/healthy_care"
+        android:textColor="#3174DC"
+        android:textSize="40sp"
+        android:textStyle="bold">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_below="@+id/search"
+        android:layout_height="140dp"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/costumebg2"
+        android:elevation="12dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/healthy_care"
+        android:textColor="#3174DC"
+        android:textSize="40sp"
+        android:textStyle="bold">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/logog"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/kalimat1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/hallo"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/kalimat2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kalimat1"
+            android:layout_marginStart="140dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="'' Muhammad Irfa'i ''"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/kalimat3"
+            android:layout_below="@+id/kalimat2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:text="Selamat di Healthy Care"
+            android:layout_marginLeft="140dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/icon_profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/userr"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="290dp"
+            android:layout_marginLeft="100dp" />
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="77dp"
+            android:layout_height="18dp"
+            android:layout_below="@id/icon_profile"
+            android:layout_marginStart="270dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="2dp"
+            android:padding="3dp"
+            android:text="Profile"
+            android:textStyle="bold"
+            android:textSize="10sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/nav3"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:background="@drawable/costumebg2"
+        android:elevation="12dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/healthy_care"
+        android:textColor="#3174DC"
+        android:textSize="40sp"
+        android:textStyle="bold">
+
+
+        <TextView
+            android:id="@+id/dokter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="70dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Dokter"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginLeft="70dp" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/dokter"
+            android:layout_marginTop="10dp"
+            android:text="50"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginStart="70dp"
+            android:layout_marginLeft="100dp" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:text="|"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:layout_marginStart="70dp"
+            android:layout_marginLeft="100dp" />
+
+        <TextView
+            android:id="@+id/specialis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="230dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Specialis"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginLeft="70dp" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/specialis"
+            android:layout_marginTop="10dp"
+            android:text="30"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginStart="240dp"
+            android:layout_marginLeft="100dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/nav4"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/nav3"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/costumebg2"
+        android:elevation="12dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/healthy_care"
+        android:textColor="#3174DC"
+        android:textSize="40sp"
+        android:textStyle="bold">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@drawable/apotek" />
+
+        <Button
+            android:id="@+id/apotek"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:padding="3dp"
+            android:text="Apotek"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/nav3"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/costumebg2"
+        android:elevation="12dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/healthy_care"
+        android:textColor="#3174DC"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="25dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@drawable/hospital" />
+
+        <Button
+            android:id="@+id/rumahsakit"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:padding="3dp"
+            android:text="Rumah sakit"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/nav5"
+        android:layout_below="@+id/nav4"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/costumebg2"
+        android:elevation="12dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/healthy_care"
+        android:textColor="#3174DC"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="25dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@drawable/obat" />
+
+        <Button
+            android:id="@+id/obat"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:padding="3dp"
+            android:text="Obat-obatan"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/nav4"
+        android:layout_marginStart="230dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/costumebg2"
+        android:elevation="12dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/healthy_care"
+        android:textColor="#3174DC"
+        android:textSize="40sp"
+        android:textStyle="bold">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@drawable/alatmedis" />
+
+        <Button
+            android:id="@+id/alatmedis"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:padding="3dp"
+            android:text="Alat medis"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/nav6"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/nav5"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/costumebg2"
+        android:elevation="12dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/healthy_care"
+        android:textColor="#3174DC"
+        android:textSize="40sp"
+        android:textStyle="bold">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@drawable/penyakit" />
+
+        <Button
+            android:id="@+id/penyakit"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:padding="3dp"
+            android:text="Penyakit"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/nav5"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/costumebg2"
+        android:elevation="12dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/healthy_care"
+        android:textColor="#3174DC"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="25dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@drawable/kosultasi" />
+
+        <Button
+            android:id="@+id/konsultasi"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:padding="3dp"
+            android:text="Konsultasi"
+            android:textSize="10sp" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_1"
+    tools:context=".RegistrasiActivity">
+
+    <TextView
+        android:id="@+id/name_registrasi"
+        android:layout_width="270dp"
+        android:gravity="center_horizontal"
+        android:layout_height="70dp"
+        android:layout_marginTop="70dp"
+        android:elevation="12dp"
+        android:background="@drawable/costumebg2"
+        android:layout_centerHorizontal="true"
+        android:text="@string/healthy_care"
+        android:fontFamily="sans-serif"
+        android:textColor="#3174DC"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/registrasi"
+        android:layout_below="@id/name_registrasi"
+        android:layout_width="190dp"
+        android:gravity="center_horizontal"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:elevation="12dp"
+        android:background="@drawable/costumebg2"
+        android:layout_centerHorizontal="true"
+        android:text="@string/registrasi"
+        android:fontFamily="sans-serif"
+        android:textColor="#3174DC"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/inputUsername"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_registrasi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="109dp"
+        android:background="@drawable/costumebg2"
+        android:elevation="5dp"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:shadowColor="@color/colorPrimaryDark"
+        tools:ignore="RtlCompat,UnusedAttribute" />
+
+    <EditText
+        android:id="@+id/inputNamadepan"
+        android:layout_below="@+id/inputUsername"
+        android:layout_width="320dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:elevation="5dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/costumebg2"
+        android:hint="@string/nama_depan"
+        android:padding="10dp"
+        android:inputType="textPersonName"
+        tools:ignore="RtlCompat,UnusedAttribute" />
+
+    <EditText
+        android:id="@+id/inputNamabelakang"
+        android:layout_below="@+id/inputNamadepan"
+        android:layout_width="320dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:elevation="5dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/costumebg2"
+        android:hint="@string/nama_belakang"
+        android:padding="10dp"
+        android:inputType="textPersonName"
+        tools:ignore="RtlCompat,UnusedAttribute" />
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputNamadepan"
+        android:background="@drawable/costumebg2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="@string/password"
+        android:elevation="5dp"
+        android:padding="10dp"
+        tools:ignore="RtlCompat,UnusedAttribute"
+        android:layout_marginLeft="100dp" />
+
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputPassword"
+        android:background="@drawable/costumebg2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Email"
+        android:elevation="5dp"
+        android:padding="10dp"
+        tools:ignore="RtlCompat,UnusedAttribute"
+        android:layout_marginLeft="100dp" />
+
+    <EditText
+        android:id="@+id/inputKonfirmasiEmail"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputEmail"
+        android:background="@drawable/costumebg2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Konfirmasi email"
+        android:elevation="5dp"
+        android:padding="10dp"
+        tools:ignore="RtlCompat,UnusedAttribute"
+        android:layout_marginLeft="100dp" />
+
+    <Button
+        android:id="@+id/btnRegistrasi"
+        android:layout_below="@+id/inputEmail"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:textColor="#fff"
+        android:background="@drawable/costumebg1"
+        android:layout_marginRight="40dp"
+        android:text="Daftar" />
+
+</RelativeLayout>
